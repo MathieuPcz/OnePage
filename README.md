@@ -1,6 +1,6 @@
 -- Porte folio --
 =================
 
-*Créer par* : ** Mathieu Paczesny**
+*Créer par* : **Mathieu Paczesny**
 
 *Adresse Url* : **mathieupaczesny.com**
