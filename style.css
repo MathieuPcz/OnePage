@@ -65,6 +65,7 @@ nav a:active{
 		top:0;
 		bottom: 0;
 		padding-top: 30%;
+		z-index: -10;
 	}
 	nav li{
 		display: block;
