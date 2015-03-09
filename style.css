@@ -51,6 +51,9 @@ nav a:active{
 .activeMenu{
 	background-color: #ed4040;	
 }
+#zoomHome{
+	overflow: hidden;
+}
 #home{
 	background: url('images/bureau.jpg');
     -webkit-background-size: cover; /* pour Chrome et Safari */
@@ -60,11 +63,32 @@ nav a:active{
     height: 700px;
     width: 100%;
 }
+#defilText{
+	position: absolute;
+	z-index: 20;
+	width:100%;
+	height: 25px;
+	overflow: hidden;
+	margin-top: 35%;
+	text-align: center;
+}
+#defilText ul{
+	width: 100%;
+}
+#defilText li{
+	margin-bottom: 25px;
+	font-style: italic;
+	text-shadow: 0 1px 0 #000;
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.3em;
+	color: #F2F2F2;
+}
 #downScrow{
 	position: absolute;
 	width: 10%;
 	margin-left:45%;
-	margin-top: 40%;
+	margin-top: 36%;
 	text-align: center;
 	cursor: pointer;
 	height: 10%;
@@ -73,6 +97,24 @@ nav a:active{
 #about{
 	display: block;
 	height: 700px;
+	padding-top: 100px;
+}
+#cercleProfil{
+	border-radius:200px;
+	width:20%;
+	height: 270px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.6);
+	margin-left: 5%;
+	margin-top: 5%;
+	padding: 5px;
+}
+#imgProfil{
+	border-radius:200px;
+	width: 98%;
+	height: 98%;
+	background-color: white;
+	overflow: hidden;
 }
 
 
