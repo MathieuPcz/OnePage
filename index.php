@@ -30,6 +30,15 @@
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			var largeurEcran = $(window).width();
+			var zoomImage = largeurEcran + 100;
+			$('#home').animate({
+				width:zoomImage
+			},5000,function() {
+		   $('#home').animate({
+				width:largeurEcran
+		  },5000)});
+			/*fixe color sur menu selectionné*/
 			$("a").click(function(e) {
 			    e.preventDefault();
 			    $("a").removeClass("activeMenu");
