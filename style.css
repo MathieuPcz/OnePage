@@ -60,7 +60,20 @@ nav a:active{
     height: 700px;
     width: 100%;
 }
-
+#downScrow{
+	position: absolute;
+	width: 10%;
+	margin-left:45%;
+	margin-top: 40%;
+	text-align: center;
+	cursor: pointer;
+	height: 10%;
+	padding-top: 5%;
+}
+#about{
+	display: block;
+	height: 700px;
+}
 
 
 
