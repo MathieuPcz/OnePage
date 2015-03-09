@@ -11,16 +11,19 @@ a{
 	color:white;
 }
 #header{
+	position: fixed;
 	background-color: #000F1C;
 	color: rgb(240,240,240);
 	min-height: 34px;
 	padding-top: 1%;
 	padding-left: 5%;
 	padding-right: 5%;
+	width: 90%;
+	visibility: hidden;
 }
 .colorTitle{
 	display: inline;
-	color:#757575;
+	color:#ed4040;
 }
 #title{
 	float: left;
@@ -48,9 +51,27 @@ nav a:active{
 .activeMenu{
 	background-color: #ed4040;	
 }
+#home{
+	background: url('images/bureau.jpg');
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    height: 700px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
 @media all and (max-width: 900px){
 	#header{
 		padding: 0;
+		width: 100%;
 	}
 	#title{
 		display: block;
@@ -82,4 +103,13 @@ nav a:active{
 	nav a:hover{
 
 	}
+	#home{
+	background: url('images/bureau.jpg') fixed;
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+    height: 700px;
+    width: 100%;
+}
 }
