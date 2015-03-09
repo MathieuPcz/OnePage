@@ -22,15 +22,30 @@
 			</nav>
 		</div>
 		<div id="downScrow"><a href="#about"><img src="images/flechebas.png" alt="Clic ici"></a></div>
-		<div id="home"></div>
-		<div id="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam sapiente enim esse. Corporis saepe, vitae. Recusandae, quae beatae expedita sequi eos neque assumenda magnam vitae deleniti, sit sed ipsam a.</div>
+		<div id="home">
+			<div id="defilText">
+				<strong>Vous avez des projets ? des idées ?</strong>
+				<strong>Créatif de créer un site web à votre image</strong>
+			</div>
+		</div>
+		<div id="about"></div>
 		<div id="services"></div>
 		<div id="skill"></div>
 		<div id="project"></div>
 		<div id="contact"></div>
-	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
+	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+	<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
+			/*mise en place du paralax*/
+			$.localScroll();		
+    		  $('#home').parallax("50%", 0.2); 
+    		  $('#about').parallax("50%", 0.2); 
+    		  $('#services').parallax("50%", 0.2);
+    		  $('#skill').parallax("50%", 0.2);
+
 			/*repete defilement haut/bas de la fleche*/ 
 			function bis(){
 				 $("#downScrow").animate({marginTop:450},'slow')
