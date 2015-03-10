@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/home.css">
 		<link rel="stylesheet" href="css/about.css">
+		<link rel="stylesheet" href="css/services.css">
 		
 	</head>
 	<body>
@@ -56,7 +57,26 @@
 				
 			</div>
 			<div id="services">
-				<h1>Services</h1>
+				<hr><h1>Services</h1>
+
+				<div id="img">
+					<strong>WEBDEVELOPER FRONT-END ET BACK-END, J'OFFRE MES SERVICES POUR LA CRÉATION DE SITES WEB ET DE TRAVAUX D'INFOGRAPHIE.</strong>
+					<div class="textLogo">
+						<img src="images/infoLogo.png" alt="logo Infographie">
+						<h2>Infographie</h2>
+						<p>Création d'un univers graphique à votre image.</p>
+					</div>
+					<div class="textLogo">
+						<img src="images/webLogo.png" alt="logo Web">
+						<h2>Site Web</h2>
+						<p>Intégration et développement de votre site web.</p>
+					</div>
+					<div class="textLogo">
+						<img src="images/commLogo.png" alt="logo Communication">
+						<h2>Communication</h2>
+						<p>Communication visuel à travers la publicité papier ou numérique grâce aux réseaux sociaux.</p>
+					</div>
+				</div>
 			</div>
 			<div id="skill"></div>
 			<div id="project"></div>

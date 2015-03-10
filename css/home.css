@@ -51,7 +51,7 @@
 }
 @media all and (max-width: 900px){
 	#home{
-	background: url('images/bureau.jpg') fixed;
+	background: url('../images/bureau.jpg') fixed;
     -webkit-background-size: cover; /* pour Chrome et Safari */
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */

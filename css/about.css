@@ -1,7 +1,7 @@
 #triangleBleu{
-	border: 350px solid #000F1C;
-	border-top : 350px solid transparent;
-	border-right: 350px solid transparent;
+	border: 300px solid #000F1C;
+	border-top : 300px solid transparent;
+	border-right: 300px solid transparent;
 	position: absolute;
 	z-index: -10;
 
