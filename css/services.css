@@ -1,0 +1,7 @@
+#services h1,#services h2{
+
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #000;
+	color:#666666;
+	border-bottom:3px solid #ed4040;
+}
