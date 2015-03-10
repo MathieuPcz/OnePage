@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Mathieu Paczesny | Developpeur Web</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="home.css">
-		<link rel="stylesheet" href="about.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/home.css">
+		<link rel="stylesheet" href="css/about.css">
 		
 	</head>
 	<body>

@@ -2,7 +2,7 @@
 	overflow: hidden;
 }
 #home{
-	background: url('images/bureau.jpg');
+	background: url('../images/bureau.jpg');
     -webkit-background-size: cover; /* pour Chrome et Safari */
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */
