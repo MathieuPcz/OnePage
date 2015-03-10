@@ -1,0 +1,111 @@
+#triangleBleu{
+	border: 350px solid #000F1C;
+	border-top : 350px solid transparent;
+	border-right: 350px solid transparent;
+	position: absolute;
+	z-index: -10;
+
+}
+#about{
+	display: block;
+	min-height: 400px;
+	padding-top: 100px;
+}
+#cercleProfil{
+	border-radius:200px;
+	width:20%;
+	height: 270px;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.6);
+	margin-left: 5%;
+	margin-top: 5%;
+	padding: 5px;
+	display: inline-block;
+}
+#imgProfil{
+	border-radius:200px;
+	width: 98%;
+	height: 98%;
+	overflow: hidden;
+}
+#textAbout{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 50px;
+	margin-left: 5%;
+	width: 60%;
+	background-color: #F2F2F2;
+	padding-bottom: 50px;
+}
+#textAbout h1,#textAbout h2{
+
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #000;
+	color:#666666;
+	border-bottom:3px solid #ed4040;
+}
+#textAbout h1{
+	float: right;
+	margin-left:43%;
+	margin-bottom: 2%;
+}
+#textAbout h2{
+	display: inline-block;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+cite {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  display :block;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 75px;
+}
+cite:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+cite p {
+  display: inline;
+  color: rgb(111,111,111);
+	font-family: Raleway, sans-serif;
+}
+#about p{
+	color: rgb(111,111,111);
+}
+
+#about a{
+	color:#2AACD9;
+}
+@media all and (max-width: 900px){
+	
+	
+	#container{
+		margin-left:120px;
+	}
+	#cercleProfil{
+	border-radius:200px;
+	width:20%;
+	max-height: 20%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.6);
+	margin-left: 2%;
+	margin-top: 5%;
+	padding: 5px;
+	}
+	#imgProfil{
+		border-radius:200px;
+		width: 98%;
+		height: 98%;
+		background-color: white;
+		overflow: hidden;
+	}
+}
