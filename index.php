@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/home.css">
 		<link rel="stylesheet" href="css/about.css">
 		<link rel="stylesheet" href="css/services.css">
-		
+		<link rel="stylesheet" href="css/skill.css">
 	</head>
 	<body>
 		<div id="chargement"><span id="chargement-infos"></span></div>
@@ -71,7 +71,7 @@
 						<div class="textLogo">
 							<img src="images/webLogo.png" alt="logo Web">
 							<h2>Site Web</h2>
-							<p>Intégration et développement de votre site web.</p>
+							<p>Intégration et développement de votre site web. Du site vitrine au grand projet.</p>
 						</div>
 						<div class="textLogo">
 							<img src="images/commLogo.png" alt="logo Communication">
@@ -80,7 +80,31 @@
 						</div>
 					</div>
 				</div>
-				<div id="skill"></div>
+				<div class="triangleInvers"></div>
+				<div id="skill">
+					<hr><h1>Compétences</h1>
+					<cite> L’autorité d’un seul homme compétent, qui donne de bonnes raisons et des preuves certaines, vaut mieux que le consentement unanime de ceux qui n’y comprennent rien.<p>	Galilée</p></cite>
+					<h2>Intégration Web</h2>
+					<div id="imgIntegration">
+						<img src="images/html.png" alt="html">
+						<img src="images/css.png" alt="css">
+						<img src="images/jquery.png" alt="jquery">
+						<img src="images/bootstrap.png" alt="bootstrap">
+					</div>
+					<h2>Developpement Web</h2>
+					<div id="imgDev">
+						<img src="images/php.png" alt="php">
+						<img src="images/symfony.png" alt="symfony">
+						<img src="images/wordpress.png" alt="wordpress">
+						<img src="images/git.png" alt="git">
+					</div>
+					<h2>Infographie/communication</h2>
+					<div id="imgInfographie">
+						<img src="images/photoshop.png" alt="photoshop">
+						<img src="images/illustrator.png" alt="illustrator">
+						<img src="images/aftereffect.png" alt="afterEffect">
+					</div>
+				</div>
 				<div id="project"></div>
 				<div id="contact"></div>
 			</div>

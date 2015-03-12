@@ -1,0 +1,50 @@
+.triangleInvers{
+	border: 800px solid #000F1C;
+	border-top : 800px solid transparent;
+	border-left: 800px solid transparent;
+	position: absolute;
+	right: 0;
+	margin-top: -10%;
+	z-index: -10;
+
+}
+#skill{
+	background-color: #F2F2F2;
+	padding: 2%;
+	display: block;
+	min-height: 400px;
+	padding-top: 100px;
+	color:white;
+	width: 60%;
+	margin-left: 3%;
+	color:#666666;
+	text-align: center;
+}
+#skill h1,#skill h2{
+
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #000;
+	color:#666666;
+	border-bottom:3px solid #ed4040;
+}
+#skill h1{
+	float: left;
+	margin: 2%;
+}
+#skill h2{
+	display: inline-block;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+#skill cite{
+	color:#666666;
+}
+
+#skill img{
+	width:18%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 10px;
+	text-align: center;
+	cursor: pointer;
+}
