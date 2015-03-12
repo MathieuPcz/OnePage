@@ -7,6 +7,7 @@
     -moz-background-size: cover; /* pour Firefox */
     -o-background-size: cover; /* pour Opera */
     background-size: cover; /* version standardisée */
+    background-repeat: no-repeat;
     height: 700px;
     width: 100%;
 }

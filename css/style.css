@@ -10,6 +10,29 @@ a{
 	text-decoration: none;
 	color:white;
 }
+#chargement{
+	background: #000F1C url('../images/loader.gif');
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */
+	border:1px solid #000F1C;
+    height: 700px;
+    width: 100%;
+    color:#F2A103;
+    text-align: center;
+    font-size: 4em;
+    visibility: visible;
+}
+#chargement-infos {
+	text-align:right;
+	white-space: nowrap;
+	display: block;
+	margin-top: 350px;
+	border-bottom:4px solid #F2A103;
+	text-shadow: 0 1px 0 #000;
+	width: 0%;
+}
 #header{
 	position: fixed;
 	background-color: #000F1C;
