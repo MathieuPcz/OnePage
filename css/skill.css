@@ -14,7 +14,6 @@
 	display: block;
 	min-height: 400px;
 	padding-top: 100px;
-	color:white;
 	width: 80%;
 	margin-left: 10%;
 	color:#666666;
@@ -28,12 +27,11 @@
 }
 #skill h1{
 	float: right;
-	margin: 2%;
 }
 #skill h2{
 	display: inline-block;
 	margin-bottom: 2%;
-	margin-top: 2%;
+	margin-top: 5%;
 }
 #skill cite{
 	color:#666666;
@@ -56,11 +54,11 @@
 	border-radius: 5px;
 }
 .barreProgress{
-	background-color: #ed4040;
+	background-color: #2AACD9;
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
 	text-shadow: 0 1px 0 #000;
 }
 .activeSkill{
-	border-bottom:10px solid #ed4040;
+	border-bottom:10px solid #2AACD9;
 }

@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="css/about.css">
 		<link rel="stylesheet" href="css/services.css">
 		<link rel="stylesheet" href="css/skill.css">
+		<link rel="stylesheet" href="css/project.css">
+		<link rel="stylesheet" href="css/contact.css">
 	</head>
 	<body>
 		<div id="chargement"><span id="chargement-infos"></span></div>
@@ -108,8 +110,60 @@
 						<div class="progress"><div class="barreProgress" id="barreInfo"></div></div>	
 					</div>
 				</div>
-				<div id="project"></div>
-				<div id="contact"></div>
+				<div id="project">
+					<h1>Mes Projets</h1>
+					 <ul id="menuProject">
+					 	<li id="OnePage">One Page</li>
+					 	<li id="WeAreLgends">We Are Legends</li>
+					 	<li id="HashtagEvent">#Event</li>
+					 	<li id="christana">Christana Rlk</li>
+					 </ul>
+					 <div id="onePage">
+					 	<h2>Mon One Page</h2>
+					 	<i>Le one page est maintenant incontournable dans le domaine du Web. La plupart des sites vitrine propose ce système</i>
+					 	<img src="images/onepage.png" alt="onepage">
+					 	<p>Pour créer ce One Page, qui est maintenant mon site personnel, j'ai utilisé 4 langages. Le HTML 5 et le CSS 3 pour le balisage et le design du site. Puis le JavaScript avec la bibliothèque JQuery et le plugin Scroll de JQuery pour les effets interactifs comme la page de chargement. Mais aussi le Php pour un formulaire de contact avec des fonctionnalités en ajax.</p>
+					 </div>
+					 <div id="Wal">
+					 	<h2>We Are Legends</h2>
+					 	<i>We Are Legends est un site communautaire pour le jeux League Of Legends.</i>
+					 	<img src="images/wal.png" alt="We are Legend">
+					 	<p>Ce site est fictif. J'ai utilisé PhpBB3 pour la gestions des utilisateurs et pour le forum. Le reste a été créer avec HTML/CSS, php et une faible utilisation de JQuery.</p>
+					 </div>
+					 <div id="event">
+					 	<h2>#Event</h2>
+					 	<i>#Event est un réel projet en cours. Le projet a pour but de réaliser un site évenementiel de rencontre.</i>
+					 	<img src="images/event.jpg" alt="event">
+					 	<p>Pour réaliser ce site, j'ai du me rapprocher de deux designer, trois integrateur/developpeur dont moi-même, ainsi qu'un commercial. Après plusieur réunion nous avons décidé de le réaliser avec le framework Symfony pour une meilleur organisation et git/git-hub pour la gestion de sauvegarde.</p>
+					 </div>
+					 <div id="christanarlk">
+					 	<h2>Christana RlK</h2>
+					 	<i>Christana RlK est un site vitrine réalisé pour une amie designeuse.</i>
+					 	<img src="images/christanarlk.png" alt="event">
+					 	<p>J'ai réalisé ce site avec wordpress qui est un CMS (Content management system). Il n'y a pas énormément de contenu, j'attend que cette chère amie me donne plus d'info.</p>
+					 </div>
+
+				</div>
+				<div id="contact">
+					<h1>Contact</h1>
+					<div id="contactText">
+						<i>Vous avez des projets ? des idées ? Je vous offre ma créativité et mes compétences, pour un site web à votre image.</i>
+						<p>N'hésitez pas à me contacter</p>
+					</div>
+					<form>
+						<div id="premierblock">
+						<input type="text" placeholder="Votre nom">
+						<input type="text" placeholder="Votre prénom">
+						</div>
+						<div id="secondblock">
+						<input type="text" placeholder="Objet de votre demande" id="objet">
+						<input type="email" placeholder="Votre email" id="email">
+						</div>
+						<textarea name="description" id="description" cols="30" rows="10" placeholder="Descritpion"></textarea>
+						<button type="button">Envoyer</button>
+					</form>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2654.903289212911!2d4.0796064!3d48.28547640000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee9902680248b9%3A0x13fdd3fdb634bd36!2s14+Rue+du+Beauregard%2C+10000+Troyes!5e0!3m2!1sfr!2sfr!4v1426363240196" width="105%" height="450" frameborder="0" style="border:0; margin-left:-3%; margin-top:2%; bottom:0; padding:0;"></iframe>
+				</div>
 			</div>
 		</div>
 	<script type="text/javascript" src="js/jquery.js"></script>
@@ -200,8 +254,46 @@
 			$('#infos').addClass("activeMenu");
 		})
 
+		/*menu #project*/
+		$('#Wal').css('display','none');
+		$('#event').css('display','none');
+		$('#christanarlk').css('display','none');
+
+		$('#OnePage').addClass('activeMenuProject');
+
+		$('#OnePage').click(function(){
+			$('#project li').removeClass('activeMenuProject');
+			$('#OnePage').addClass('activeMenuProject');
+			$('#Wal').fadeOut();
+			$('#event').fadeOut();
+			$('#christanarlk').fadeOut();
+			$('#onePage').fadeIn(800);
+		});
+		$('#WeAreLgends').click(function(){
+			$('#project li').removeClass('activeMenuProject');
+			$('#WeAreLgends').addClass('activeMenuProject');
+			$('#onePage').fadeOut();
+			$('#event').fadeOut();
+			$('#christanarlk').fadeOut();
+			$('#Wal').fadeIn(800);
+		});
+		$('#HashtagEvent').click(function(){
+			$('#project li').removeClass('activeMenuProject');
+			$('#HashtagEvent').addClass('activeMenuProject');
+			$('#Wal').fadeOut();
+			$('#onePage').fadeOut();
+			$('#christanarlk').fadeOut();
+			$('#event').fadeIn(800);
+		});
+		$('#christana').click(function(){
+			$('#project li').removeClass('activeMenuProject');
+			$('#christana').addClass('activeMenuProject');
+			$('#Wal').fadeOut();
+			$('#event').fadeOut();
+			$('#onePage').fadeOut();
+			$('#christanarlk').fadeIn(800);
+		});
 		
-	
 
 
 	});

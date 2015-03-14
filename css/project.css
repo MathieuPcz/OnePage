@@ -1,0 +1,44 @@
+#project{
+	width: 80%;
+	margin-left:10%;
+	overflow: hidden;
+	background-color: #F2F2F2;
+	padding: 2%;
+	color:#666666;	
+}
+#project h1,#project h2{
+
+	text-transform: uppercase;
+	text-shadow: 0 1px 0 #000;
+	color:#666666;
+	border-bottom:3px solid #ed4040;
+}
+#project h1{
+	float: right;
+	margin-top: 2%;
+}
+#project h2{
+	display: inline-block;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+#project ul{
+	margin-top: 10%;
+	text-align: center;
+}
+#project li{
+	margin-right: 5%;
+}
+#project i,#project p{
+	display: block;
+	text-align: center;
+	margin: 2%;
+
+}
+#project img{
+	margin-left: -3%;
+	width: 107%;
+}
+.activeMenuProject{
+	border-bottom:3px solid #2AACD9;
+}
