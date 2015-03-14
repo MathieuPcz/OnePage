@@ -21,7 +21,7 @@
 						<li><a  class="home" href="#home">Accueil</a></li>
 						<li><a class="otherHome"  href="#about" id="infos">A Propos</a></li>
 						<li><a class="otherHome"  href="#services">Services</a></li>
-						<li><a class="otherHome"  href="#skill">Compétences</a></li>
+						<li><a class="otherHome"  href="#skill" id="comp">Compétences</a></li>
 						<li><a class="otherHome"  href="#project">Projets</a></li>
 						<li><a class="otherHome"  href="#contact">Contact</a></li>
 					</ul>
@@ -86,23 +86,26 @@
 					<cite> L’autorité d’un seul homme compétent, qui donne de bonnes raisons et des preuves certaines, vaut mieux que le consentement unanime de ceux qui n’y comprennent rien.<p>	Galilée</p></cite>
 					<h2>Intégration Web</h2>
 					<div id="imgIntegration">
-						<img src="images/html.png" alt="html">
-						<img src="images/css.png" alt="css">
-						<img src="images/jquery.png" alt="jquery">
-						<img src="images/bootstrap.png" alt="bootstrap">
+						<img src="images/html.png" alt="html" id="html">
+						<img src="images/css.png" alt="css" id="css">
+						<img src="images/jquery.png" alt="jquery" id="jquery">
+						<img src="images/bootstrap.png" alt="bootstrap" id="bootstrap">
+						<div class="progress"><div class="barreProgress" id="barreInt"></div></div>
 					</div>
 					<h2>Developpement Web</h2>
 					<div id="imgDev">
-						<img src="images/php.png" alt="php">
-						<img src="images/symfony.png" alt="symfony">
-						<img src="images/wordpress.png" alt="wordpress">
-						<img src="images/git.png" alt="git">
+						<img src="images/php.png" alt="php" id="php">
+						<img src="images/symfony.png" alt="symfony" id="symfony">
+						<img src="images/wordpress.png" alt="wordpress" id="wordpress">
+						<img src="images/git.png" alt="git" id="git">
+						<div class="progress"><div class="barreProgress" id="barreDev"></div></div>
 					</div>
 					<h2>Infographie/communication</h2>
 					<div id="imgInfographie">
-						<img src="images/photoshop.png" alt="photoshop">
-						<img src="images/illustrator.png" alt="illustrator">
-						<img src="images/aftereffect.png" alt="afterEffect">
+						<img src="images/photoshop.png" alt="photoshop" id="photoshop">
+						<img src="images/illustrator.png" alt="illustrator" id="ai">
+						<img src="images/aftereffect.png" alt="afterEffect" id="ae">
+						<div class="progress"><div class="barreProgress" id="barreInfo"></div></div>	
 					</div>
 				</div>
 				<div id="project"></div>
@@ -113,6 +116,7 @@
 	<script type="text/javascript" src="js/jquery.localscroll-1.2.7-min.js"></script>
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script type="text/javascript" src="js/loader.js"></script>
+	<script type="text/javascript" src="js/barreLoad.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.pageLoader();
@@ -179,14 +183,30 @@
 	      }, 4000);
 	   });
 
+	/*	defilement integration text*/
+			$('#integration').fadeOut(0).fadeIn(2000);
+		$(function(){
+	      setInterval(function(){
+	         $("#integration ul").animate({marginTop:-50},1500,function(){
+	            $(this).css({marginTop:0}).find("li:last").after($(this).find("li:first"));
+	         })
+	      }, 4000);
+	   });
+
 		/*clic fleche -> menu visible*/
 		$('#downScrow').click(function(){
 			$('#header').css('visibility','visible');
 			 $("li a").removeClass("activeMenu");
 			$('#infos').addClass("activeMenu");
 		})
+
+		
+	
+
+
 	});
 	</script>
+
 	</body>
 </html>
 
