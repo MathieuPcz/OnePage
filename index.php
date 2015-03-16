@@ -57,7 +57,7 @@
 						<cite><p>La créativité autorise chacun à commettre des erreurs. L'art c'est de savoir lesquelles garder.</p></cite>
 						<h2>Parlons un peu de moi</h2>
 						<p>Developpeur Web depuis un an, j'apporte ma créativité et mes compétence. Je vous accompagne jusqu'à la production de votre projet. Créatif et passionné, mes compétences vous permettront de réaliser un site web dynamique, et protègé. m'éforcant de rester à la page des tendances du webdesign ainsi que du webdevelopment, je suis à l'écoute des besoins et j'aime apporter mes idées au sein d'un projet pour qu'elles répondent au mieux à vos attentes.</p>
-						<h2>Mon parcour</h2>
+						<h2>Mon parcours</h2>
 						<p>Ma passion pour le web ne m'est pas apparut au début de mes études. J'ai commencé par un baccalauréat technologique dans le domaine de l'électrotechnique. J'ai ensuite continué dans cette vois par un bts puis une licence professionnel dans les énergies. C'est seulement pendant cette license que cette passion est arrivée. J'ai commencé par apprendre les rouages d'un site web et ces secrets via le site <a href="http://openclassrooms.com/" target="_blank">d'OpenClassRooms</a>. Après un an d'apprentissage en autodidacte je décide de reprendre mes études dans les métiers du multimédia et de l'internet.</p>
 					</div>
 					
