@@ -22,7 +22,7 @@
 				<nav>
 					<ul>
 						<li><a  class="home" href="#home">Accueil</a></li>
-						<li><a class="otherHome"  href="#about" id="infos">A Propos</a></li>
+						<li><a class="otherHome"  href="#about" id="infos">About</a></li>
 						<li><a class="otherHome"  href="#services">Services</a></li>
 						<li><a class="otherHome"  href="#skill" id="comp">Compétences</a></li>
 						<li><a class="otherHome"  href="#project">Projets</a></li>
@@ -49,7 +49,7 @@
 				<div id="about">
 					<div id="cercleProfil">
 						<div id="imgProfil">
-							<img src="images/profil.jpg" alt="Image de profil" id="profil">
+							
 						</div>
 					</div>
 					<div id="textAbout">
@@ -136,7 +136,7 @@
 					 	<h2>#Event</h2>
 					 	<i>#Event est un réel projet en cours. Le projet a pour but de réaliser un site évenementiel de rencontre.</i>
 					 	<img src="images/event.jpg" alt="event">
-					 	<p>Pour réaliser ce site, j'ai du me rapprocher de deux designer, trois integrateur/developpeur dont moi-même, ainsi qu'un commercial. Après plusieur réunion nous avons décidé de le réaliser avec le framework Symfony pour une meilleur organisation et git/git-hub pour la gestion de sauvegarde.</p>
+					 	<p>Pour réaliser ce site, j'ai du me rapprocher de deux designer, trois integrateur/developpeur, ainsi qu'un commercial. Après plusieurs réunions nous avons décidé de le réaliser avec le framework Symfony pour une meilleur organisation et git/git-hub pour la gestion de sauvegarde.</p>
 					 </div>
 					 <div id="christanarlk">
 					 	<h2>Christana RlK</h2>
@@ -181,15 +181,7 @@
 			$.pageLoader();
 		
 		
-		/*defilement image profil*/
 		
-		function defilProfil(){
-			var largeurImage = $(window).width()*0.3;
-			 $("#profil").animate({width:largeurImage},5000).delay(2000)
-			 			 .animate({width:480},5000,defilProfil).delay(2000);
-			};
-
-			defilProfil();
 		
 		/*mise en place du scroll*/
 		$.localScroll();		

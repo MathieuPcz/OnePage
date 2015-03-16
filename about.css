@@ -23,6 +23,11 @@
 	display: inline-block;
 }
 #imgProfil{
+	background: url('../images/profil.jpg');
+    -webkit-background-size: cover; /* pour Chrome et Safari */
+    -moz-background-size: cover; /* pour Firefox */
+    -o-background-size: cover; /* pour Opera */
+    background-size: cover; /* version standardisée */ 
 	border-radius:200px;
 	width: 98%;
 	height: 98%;
@@ -89,23 +94,15 @@ cite p {
 	
 	
 	#container{
-		margin-left:120px;
 	}
 	#cercleProfil{
-	border-radius:200px;
-	width:20%;
-	max-height: 20%;
-	overflow: hidden;
-	background-color: rgba(0,0,0,0.6);
-	margin-left: 2%;
-	margin-top: 5%;
-	padding: 5px;
+		display: none;
 	}
-	#imgProfil{
-		border-radius:200px;
-		width: 98%;
-		height: 98%;
-		background-color: white;
-		overflow: hidden;
+	#triangleBleu{
+		display: none;
+	}
+	#textAbout{
+		width: 90%;
+		padding:5%;
 	}
 }
