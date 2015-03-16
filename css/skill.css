@@ -62,3 +62,40 @@
 .activeSkill{
 	border-bottom:10px solid #2AACD9;
 }
+@media all and (max-width: 500px){
+	#triangleInvers{
+		display: none;
+	}
+	#skill{
+		width: 90%;
+		padding: 5%;
+		margin: 0;
+	}
+	.progress{
+		width: 80%;
+	}
+	.activeSkill{
+		border-bottom:5px solid #2AACD9;
+	}
+	#skill h2{
+		text-align: center;
+		display: block;
+	}
+
+}
+@media all and (min-width: 500px) and (max-width: 900px){
+	#triangleInvers{
+		display: none;
+	}
+	#skill{
+		width: 90%;
+		padding: 5%;
+		margin: 0;
+	}
+	.progress{
+		width: 80%;
+	}
+	.activeSkill{
+		border-bottom:5px solid #2AACD9;
+	}
+}

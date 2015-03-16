@@ -58,3 +58,39 @@
 	-o-transition: all .5s;
 	transition: all .5s;
 }
+@media all and (max-width: 500px){
+	#contactText{
+		padding-top: 20%;
+	}
+	#contact input{
+		width: 80%;
+		margin-left: 10%;
+		display: block;
+		margin-top: 5%;
+	}
+	#contact textarea{
+		width: 80%;
+		border-radius: 5px;
+		margin: 10%;
+	}
+	#contact button{
+		margin-left: 35%;
+	}
+}
+@media all and (min-width: 500px) and (max-width: 900px){
+	#contactText{
+		padding-top: 10%;
+	}
+	#contact input{
+		width: 40%;
+		margin-top: 5%;
+	}
+	#contact textarea{
+		width: 82%;
+		border-radius: 5px;
+		margin: 10%;
+	}
+	#contact button{
+		margin-left: 46%;
+	}	
+}

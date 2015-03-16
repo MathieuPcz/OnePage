@@ -16,6 +16,7 @@
 		<div id="content">
 			<div id="header">
 				<div id="title">
+					<img src="images/petitmenu.png" alt="menu" id="petitmenu">
 					<h2>Mathieu <div class="colorTitle">P</div>a<div class="colorTitle">cZ</div>esny</h2>
 				</div>
 				<nav>
@@ -29,8 +30,9 @@
 					</ul>
 				</nav>
 			</div>
-			<a href="#about"><div id="downScrow"><img src="images/flechebas.png" alt="Clic ici"></div></a>
+			
 			<div id="zoomHome">
+				<a href="#about"><div id="downScrow"><img src="images/flechebas.png" alt="Clic ici"></div></a>
 				<h2>Mathieu <div class="colorTitle">P</div>a<div class="colorTitle">cZ</div>esny</h2>
 				<div id="defilText">
 					<ul>
@@ -111,7 +113,7 @@
 					</div>
 				</div>
 				<div id="project">
-					<h1>Mes Projets</h1>
+					<hr><h1>Mes Projets</h1>
 					 <ul id="menuProject">
 					 	<li id="OnePage">One Page</li>
 					 	<li id="WeAreLgends">We Are Legends</li>
@@ -120,13 +122,13 @@
 					 </ul>
 					 <div id="onePage">
 					 	<h2>Mon One Page</h2>
-					 	<i>Le one page est maintenant incontournable dans le domaine du Web. La plupart des sites vitrine propose ce système</i>
+					 	<i>Le one page est maintenant incontournable dans le domaine du Web. La plupart des sites vitrine proposent ce système</i>
 					 	<img src="images/onepage.png" alt="onepage">
 					 	<p>Pour créer ce One Page, qui est maintenant mon site personnel, j'ai utilisé 4 langages. Le HTML 5 et le CSS 3 pour le balisage et le design du site. Puis le JavaScript avec la bibliothèque JQuery et le plugin Scroll de JQuery pour les effets interactifs comme la page de chargement. Mais aussi le Php pour un formulaire de contact avec des fonctionnalités en ajax.</p>
 					 </div>
 					 <div id="Wal">
 					 	<h2>We Are Legends</h2>
-					 	<i>We Are Legends est un site communautaire pour le jeux League Of Legends.</i>
+					 	<i>We Are Legends est un site communautaire pour le jeu League Of Legends.</i>
 					 	<img src="images/wal.png" alt="We are Legend">
 					 	<p>Ce site est fictif. J'ai utilisé PhpBB3 pour la gestions des utilisateurs et pour le forum. Le reste a été créer avec HTML/CSS, php et une faible utilisation de JQuery.</p>
 					 </div>
@@ -148,19 +150,21 @@
 					<h1>Contact</h1>
 					<div id="contactText">
 						<i>Vous avez des projets ? des idées ? Je vous offre ma créativité et mes compétences, pour un site web à votre image.</i>
-						<p>N'hésitez pas à me contacter</p>
+						<p>N'hésitez pas à me contacter par téléphone au : 06 59 48 39 29, </p>
+						<p>ou par email en remplissant le formulaire ci-dessous.</p>
 					</div>
 					<form>
 						<div id="premierblock">
-						<input type="text" placeholder="Votre nom">
-						<input type="text" placeholder="Votre prénom">
+						<input type="text" placeholder="Votre nom" id="name">
+						<input type="text" placeholder="Votre prénom" id="firstName">
 						</div>
 						<div id="secondblock">
 						<input type="text" placeholder="Objet de votre demande" id="objet">
 						<input type="email" placeholder="Votre email" id="email">
 						</div>
-						<textarea name="description" id="description" cols="30" rows="10" placeholder="Descritpion"></textarea>
-						<button type="button">Envoyer</button>
+						<textarea name="description" id="text" cols="30" rows="10" placeholder="Votre texte"></textarea>
+						<button type="button" id="envoyer">Envoyer</button>
+						<div id="infoForm"></div>
 					</form>
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2654.903289212911!2d4.0796064!3d48.28547640000001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee9902680248b9%3A0x13fdd3fdb634bd36!2s14+Rue+du+Beauregard%2C+10000+Troyes!5e0!3m2!1sfr!2sfr!4v1426363240196" width="105%" height="450" frameborder="0" style="border:0; margin-left:-3%; margin-top:2%; bottom:0; padding:0;"></iframe>
 				</div>
@@ -171,6 +175,7 @@
 	<script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
 	<script type="text/javascript" src="js/loader.js"></script>
 	<script type="text/javascript" src="js/barreLoad.js"></script>
+	<script type="text/javascript" src="js/sendMail.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$.pageLoader();
@@ -294,8 +299,39 @@
 			$('#christanarlk').fadeIn(800);
 		});
 		
+			/*gestion de la hauteur de fenetre*/
+			var heightWindow = $(window).height()+50;
+			$('#home').css('height',heightWindow);
+			$('#zoomHome').css('height',heightWindow);
 
+			/*gestion largeur de fenetre*/
+			var widthWindow = $(window).width();
+			if(widthWindow>900){
+				$('#petitmenu').css('display','none');
+			}
 
+			if(widthWindow<900){
+
+			$('#petitmenu').click(function(){
+				$('#header nav').css('display','block');
+			})
+			
+			$('#header nav').click(function(){
+				$('#header nav').css('display','none');	
+			})
+		}
+
+		/*charge barres skill*/
+		var largeurbarre = $(window).width()*0.8;
+	$('#imgIntegration img').removeClass('activeSkill');
+	$('#imgDev img').removeClass('activeSkill');
+	$('#imgInfographie img').removeClass('activeSkill');
+	$('#html').addClass('activeSkill');
+	$('#php').addClass('activeSkill');
+	$('#photoshop').addClass('activeSkill');
+	$('#barreInt').css('width',largeurbarre*0.8).html('80%');
+	$('#barreDev').css('width',largeurbarre*0.75).html('75%');
+	$('#barreInfo').css('width',largeurbarre*0.3).html('30%');
 	});
 	</script>
 

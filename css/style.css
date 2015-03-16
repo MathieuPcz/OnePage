@@ -11,11 +11,7 @@ a{
 	color:white;
 }
 #chargement{
-	background: #000F1C url('../images/loader.gif');
-    -webkit-background-size: cover; /* pour Chrome et Safari */
-    -moz-background-size: cover; /* pour Firefox */
-    -o-background-size: cover; /* pour Opera */
-    background-size: cover; /* version standardisée */
+	background-color: #000F1C;
 	border:1px solid #000F1C;
     height: 700px;
     width: 100%;
@@ -95,6 +91,8 @@ nav a:active{
 	#header{
 		padding: 0;
 		width: 100%;
+		visibility: visible;
+		z-index: 100;
 	}
 	#title{
 		display: block;
@@ -102,30 +100,41 @@ nav a:active{
 		width: 100%;
 	}
 	nav{
-		position: fixed;
-		width:120px;
+		float: none;
+		display: none;
 		text-align: center;
 		background-color: #000F1C;
 		top:0;
-		bottom: 0;
-		padding-top: 30%;
+		left: 0;
+		right: 0;
 		z-index: -10;
+		margin-top: 30px;
 	}
 	nav li{
 		display: block;
-		width:120px;
 		height: 30px;
+		width: 100%;
 	}
 	nav a{
 		display: block;
 		padding: 0;
 		padding-top:5px;
-		width: 120px;
 		height: 100%;
+		width: 100%;
+		text-align: center;
 	}
 	nav a:hover{
 
 	}
-	
-
+	#petitmenu{
+		position: fixed;
+		z-index: 50;
+		width: 25px;
+		left: 0;
+		margin-left: 10px;
+		margin-top: 5px;
+	}
+	#downScrow{
+		display: none;
+	}
 }

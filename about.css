@@ -89,15 +89,23 @@ cite p {
 	
 	
 	#container{
+		margin-left:120px;
 	}
 	#cercleProfil{
-		display: none;
+	border-radius:200px;
+	width:20%;
+	max-height: 20%;
+	overflow: hidden;
+	background-color: rgba(0,0,0,0.6);
+	margin-left: 2%;
+	margin-top: 5%;
+	padding: 5px;
 	}
-	#triangleBleu{
-		display: none;
-	}
-	#textAbout{
-		width: 90%;
-		padding:5%;
+	#imgProfil{
+		border-radius:200px;
+		width: 98%;
+		height: 98%;
+		background-color: white;
+		overflow: hidden;
 	}
 }

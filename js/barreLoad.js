@@ -14,6 +14,7 @@ $(document).ready(function(){
 
 	});
 
+	
 	/*compétence barre load #integration*/
 
 	$('#html').click(function(){

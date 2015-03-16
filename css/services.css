@@ -44,3 +44,38 @@
 	font-style: italic;
 	margin-top: 2%;
 }
+@media all and (max-width: 500px){
+	#img{
+		margin-top: 20%;
+		width: 100%;
+		text-align: center;
+	}
+	#services{
+		padding: 0;
+	}
+	.textLogo{
+		width: 100%;
+		margin-top: 2%;
+	}
+	.textLogo p{
+		width: 100%;
+	}
+	#services img{
+		display: none;
+	}
+
+}
+@media all and (min-width: 500px) and (max-width: 900px){
+	#img{
+		margin-top: 20%;
+	}
+	#services{
+		padding: 0;
+		width: 100%; 
+	}
+	.textLogo{
+		margin: 0;
+		padding: 0;
+		width: 30%;
+	}
+}
