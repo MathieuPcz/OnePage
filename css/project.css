@@ -39,6 +39,9 @@
 	margin-left: -3%;
 	width: 107%;
 }
+#project a{
+	color:#2ABBE3;
+}
 .activeMenuProject{
 	border-bottom:3px solid #2AACD9;
 }
